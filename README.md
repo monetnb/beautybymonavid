@@ -1,2 +1,2 @@
 # beautybymonavid
-First Client
+This is my first published site.
