@@ -1,0 +1,83 @@
+.products-body {
+  height: 100%;
+  background-image: url('/img/estudio-bloom-up1YpJMhdgk-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  background-attachment: fixed;
+
+  .title {
+    font-family: 'Raleway';
+    font-size: 4em;
+    padding-top: 30px;
+  }
+
+  .lashInfo {
+    margin: 20px;
+    // ---------- glassmorph
+    color: rgb(78, 23, 23);
+    background-color: rgba(255, 255, 255, 0.377);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 80%;
+
+    p {
+      height: 100px;
+      padding: 10px 30px;
+      text-align: justify;
+      margin: 0;
+      color: rgb(53, 48, 48);
+    }
+
+    h3 {
+      color: rgb(75, 38, 175);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      font-family: 'Raleway';
+      padding: 10px;
+      margin-top: 5px;
+    }
+
+    .price {
+      align-items: flex-end;
+      font-size: 1.1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      color: rgba(100, 36, 36, 0.61);
+    }
+  }
+
+  .bookBtn {
+    color: rgb(78, 23, 23);
+    background-color: rgba(255, 255, 255, 0.377);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    transition: all 0.1s ease-in-out;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    padding: 5px 40px;
+    transition: all 0.1s ease-in-out;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+
+    &:hover {
+      color: rgb(75, 38, 175);
+      background-color: rgba(235, 235, 235, 0.377);
+      box-shadow: 0 5px 10px rgba(36, 23, 221, 0.267);
+    }
+  }
+}
+
+/* ------Responsive Media------- */
+
+@media only screen and (max-width: 500px) {
+  .price {
+    margin-top: 30px;
+  }
+}

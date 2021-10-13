@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Satisfy&display=swap');
+
+@import 'policy';
+@import 'products';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar {
+  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+  box-shadow: 0px 1px 20px 0 rgba(92, 86, 86, 0.2);
+}
+
+/*------------- Main PAGE--------------- */
+
+.banner {
+  height: 25rem;
+  width: 100vw;
+  position: center;
+  background-image: url('/img/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 50px 10px #dacece;
+  background-repeat: no-repeat;
+  opacity: 0.65;
+  display: flex;
+  h1 {
+    color: rgb(226, 221, 221);
+    position: relative;
+    left: 20px;
+    top: 100px;
+  }
+}
+
+/*------------- Intro--------------- */
+
+.bod {
+  height: auto;
+  width: 100vw;
+  //   margin-top: 50px;
+  padding: 25px 100px;
+}
+
+.lashIntro {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
+  background-color: rgba(197, 170, 170, 0.555);
+
+  h4 {
+    font-family: 'Satisfy';
+    font-size: 300%;
+    color: #9b5252e0;
+  }
+  h2 {
+    margin-top: 0.5rem;
+  }
+  p {
+    font-family: 'Raleway';
+    margin-top: 3rem;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: justify;
+    color: #000000;
+  }
+}
+
+hr {
+  color: rgb(144, 146, 148);
+}
+h2 {
+  font-family: 'Raleway';
+  font-size: 31px;
+  font-weight: bold;
+  color: #553838be;
+}
+
+/*------------- About Section--------------- */
+.aboutArtist {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas:
+    'head head'
+    'about img';
+  row-gap: 20px;
+  column-gap: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  main {
+    grid-area: about;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: justify;
+    color: #2f1717d0;
+    font-family: 'Raleway';
+  }
+
+  .bookBtn {
+    background-color: white;
+    color: #2f1717d0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    border-radius: 2%;
+    padding: 5px 40px;
+    border: 1px solid rgb(187, 166, 169);
+
+    &:hover {
+      background-color: rgb(204, 172, 176);
+      color: white;
+      border: 2px solid rgb(209, 205, 206);
+    }
+  }
+
+  img {
+    width: auto;
+    height: 500px;
+    border: 10px solid #be8f8fa9;
+  }
+  div {
+    grid-area: img;
+    opacity: 0.8;
+  }
+  header {
+    grid-area: head;
+    font-family: 'Raleway';
+    color: #0f0404be;
+    h2 {
+      font-size: 31px;
+      font-weight: bold;
+      color: #963737d0;
+      /* color: #0f0404be; */
+    }
+  }
+}
+
+/* --------------FOOTER---------------- */
+
+footer {
+  margin-top: 4rem;
+  height: 80px;
+  border-top: solid 0.1px rgba(181, 181, 189, 0.829);
+  border: none;
+
+  .links {
+    margin-right: 5%;
+    margin-left: 1rem;
+    color: rgb(165, 147, 147);
+    padding-bottom: 70px;
+    text-decoration: none;
+  }
+
+  .links:hover {
+    color: #2f1717e8;
+  }
+  .icon {
+    font-size: 150%;
+    margin-right: 0.5rem;
+    color: #832b2be8;
+  }
+}
+
+/*------------------- MAP ------------------ */
+.map {
+  display: flex;
+  flex-direction: row;
+  /* width: auto; */
+  #map-display {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
+  #locationLink {
+    margin-top: 1.5rem;
+    font-family: raleway;
+    font-size: larger;
+  }
+}
+
+/*---------------- Office Hours --------------- */
+.time-display {
+  width: 300px;
+  #opening {
+    display: flex;
+    flex-direction: row;
+    font-family: raleway;
+    font-weight: bolder;
+    margin-top: 2rem;
+    color: rgb(141, 139, 143);
+  }
+  .workHourDays {
+    margin-right: 70px;
+  }
+  .workHours {
+    text-align: end;
+  }
+  .days {
+    padding: 5px;
+  }
+  .hours {
+    white-space: nowrap;
+    padding: 5px;
+  }
+}
+
+/*--------------- Media iPad ---------------- */
+
+@media only screen and (max-width: 1080px) {
+  .aboutArtist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .aboutArtist header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+    color: rgb(143, 74, 74);
+  }
+  .aboutArtist main {
+    width: 600px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  /* location */
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .map h2 {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(143, 74, 74);
+    margin-bottom: 30px;
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  iframe {
+    margin-left: 70px;
+    align-items: center;
+    width: 650px;
+  }
+  #address {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .time-display {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+}
+
+/*------- Media iPhone-------- */
+@media only screen and (max-width: 550px) {
+  .aboutArtist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-weight: bolder;
+      color: rgb(143, 74, 74);
+    }
+    main {
+      width: 300px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: -30px;
+    }
+
+    img {
+      margin-bottom: -17px;
+      border: none;
+    }
+  }
+
+  .lashIntro {
+    background-color: white;
+    h4 {
+      font-size: 270%;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    margin-bottom: -10px;
+  }
+
+  /* location */
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(143, 74, 74);
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+    iframe {
+      margin-left: 70px;
+      align-items: center;
+      width: 300px;
+    }
+    #address {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      justify-content: center;
+      text-align: center;
+      .hide {
+        display: none;
+      }
+    }
+    .time-display {
+      margin-top: 3em;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #intro h4 {
+    font-size: 2.5em;
+  }
+  .main {
+    height: 420px;
+  }
+
+  .links {
+    font-size: 15px;
+  }
+}
+/* ------POLICIES------- */
+
+@media only screen and (max-width: 420px) {
+  section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+  }
+  .container h4 {
+    font-size: 2em;
+  }
+  a .links {
+    color: red;
+  }
+  .lashIntro {
+    padding: 20px;
+    margin-top: 5rem;
+  }
+  #map-display h2 {
+    margin-right: 0;
+  }
+  footer {
+    .links {
+      margin: 8px;
+    }
+  }
+}

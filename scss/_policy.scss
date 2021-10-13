@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap');
+
+.policy-body {
+  // background-color: rgba(238, 222, 224, 0.555);
+  height: 100%;
+
+  .policy {
+    background-color: rgba(189, 169, 172, 0.233);
+    width: 70%;
+    padding-bottom: 3rem;
+
+    h1,
+    h4 {
+      font-family: 'Playfair Display';
+    }
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: 'Nunito';
+      text-align: justify;
+      color: rgb(92, 78, 78);
+    }
+  }
+}
+
+section {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: justify;
+  p {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+}
+
+// .accordion-button:not(.collapsed) {
+//   background-color: rgb(249, 237, 250);
+//   color: rgb(114, 10, 10);
+//   border: yellow;
+// }
+
+/* ------Responsive Media------- */
+
+@media only screen and (max-width: 500px) {
+  .policy-body {
+    background-color: white;
+    .policy {
+      width: 90%;
+      h1 {
+        font-size: 3rem;
+      }
+      h4 {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .policy-body {
+    .policy {
+      width: 100%;
+      h1 {
+        font-size: 2rem;
+        margin-bottom: -5px;
+      }
+      h4 {
+        margin-top: 50px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
